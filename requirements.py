@@ -1,6 +1,9 @@
-itertools
+more-itertools
 cycle
 random
 randrange
 tkinter
-canvas, TK, messagebox, font
+canvas
+TK
+messagebox
+font-installer
