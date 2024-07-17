@@ -1,0 +1,9 @@
+more-itertools
+cycle
+random
+randrange
+tkinter
+canvas
+tk
+messagebox
+font-installer
