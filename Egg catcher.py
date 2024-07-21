@@ -1,3 +1,43 @@
+import pygame
+pygame.init()
+
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 650
+
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+
+text_font = pygame.font.SysFont("Helvetica", 30)
+
+#function for outputting text onto the screen
+def draw_text(text, font, text_col, x, y):
+  img = font.render(text, True, text_col)
+  screen.blit(img, (x, y))
+
+run = True
+while run:
+
+  screen.fill((255, 255, 255))
+
+  draw_text("instructions", text_font, (0, 0, 0), 300, 150)
+  draw_text("How to start the game:", text_font, (0, 0, 0), 230, 220)
+  draw_text("- catch as many egg as possible in a certain amount of lives ", text_font, (0, 0, 0), 75, 280)
+  draw_text("- Eggs will go faster everytime the eggs are catched ", text_font, (0, 0, 0), 75, 320)
+  draw_text("- after u lost all 3 lives it shows game over ", text_font, (0, 0, 0), 75, 360)
+  draw_text("Controllers", text_font, (0, 0, 0), 290, 420)
+  draw_text("- keyboard left and right arrow keys", text_font, (0, 0, 0), 75, 470)
+
+
+ 
+  
+
+  for event in pygame.event.get():
+   if event.type == pygame.QUIT:
+      run = False
+
+  pygame.display.flip()
+
+pygame.quit()
+
 from itertools import cycle
 from random import randrange
 from tkinter import Canvas, Tk, messagebox, font
