@@ -20,10 +20,10 @@ while run:
 
   draw_text("instructions", text_font, (0, 0, 0), 300, 150)
   draw_text("How to start the game:", text_font, (0, 0, 0), 230, 220)
-  draw_text("- catch as many egg as possible in a certain amount of lives ", text_font, (0, 0, 0), 75, 280)
+  draw_text("- catch as many eggs as possible in a certain amount of lives ", text_font, (0, 0, 0), 75, 280)
   draw_text("- Eggs will go faster everytime the eggs are catched ", text_font, (0, 0, 0), 75, 320)
   draw_text("- after u lost all 3 lives it shows game over ", text_font, (0, 0, 0), 75, 360)
-  draw_text("Controllers", text_font, (0, 0, 0), 290, 420)
+  draw_text("Controllers:", text_font, (0, 0, 0), 290, 420)
   draw_text("- keyboard left and right arrow keys", text_font, (0, 0, 0), 75, 470)
 
 
