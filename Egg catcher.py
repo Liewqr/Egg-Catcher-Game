@@ -12,6 +12,7 @@ Count = 0
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 650
 screen = pg.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+Title = pg.display.set_caption('Egg Catcher')
 
 #Opening Screen Background Music
 pg.init()
@@ -76,7 +77,7 @@ while run:
 
     #Creating color and adjusting the size of the canvas 
     root = Tk()
-    root.title('Egg catcher')
+    root.title('Egg Catcher')
     c = Canvas(root, width=canvas_width, height=canvas_height, background="black")
     c.create_rectangle(-5, canvas_height-100, canvas_width+5, canvas_height+5, fill="orange", width=0)
     c.pack()
