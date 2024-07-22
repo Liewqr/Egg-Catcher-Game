@@ -4,7 +4,7 @@ This game objective is to catch as many eggs as possible in a certain amount of 
 
 Eggs will go faster everytime the eggs are catched.
 
-This is the start screen.
+This is the opening screen.
 ![image](https://github.com/user-attachments/assets/28db7072-df99-43d9-8606-e2e3b9b79d25)
 
 
