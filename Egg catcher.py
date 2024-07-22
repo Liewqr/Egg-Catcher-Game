@@ -36,7 +36,7 @@ while run:
   screen.fill((0, 0, 0))
   #Background Image
   screen.blit(background_image, (0,0))
-    #Text instructions for the Game
+  #Text instructions for the Game
   draw_text("Egg Catcher Game", text_font, (0, 0, 0), 300, 100)
   draw_text("Instructions:", text_font, (0, 0, 0), 100, 200)
   draw_text("-Catch as many eggs as possible in a certain amount of lives ", text_font, (0, 0, 0), 75, 250)
