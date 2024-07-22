@@ -2,7 +2,7 @@ This project is from https://thecleverprogrammer.com/2021/04/23/egg-catcher-game
 
 This game objective is to catch as many eggs as possible in a certain amount of lives.
 
-Eggs will go faster everytime the eggs are catched.
+The speed of the egg increases each time they are caught.
 
 This is the opening screen.
 ![image](https://github.com/user-attachments/assets/28db7072-df99-43d9-8606-e2e3b9b79d25)
