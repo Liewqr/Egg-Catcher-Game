@@ -7,3 +7,6 @@ canvas
 tk
 messagebox
 font-installer
+pygame
+mixer
+pg
