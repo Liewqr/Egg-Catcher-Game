@@ -1,6 +1,7 @@
 This project is from https://thecleverprogrammer.com/2021/04/23/egg-catcher-game-using-python/ ,this guy is a LEGEND!.
 
-Description
+**Description**
+
 An Egg Catcher Game is a lively activity where player use baskets to catch within a set of lives. It often involves coordinaton and quick reflexes.It's a fun and engaging game!.
 
 This game objective is to catch as many eggs as possible in a certain amount of lives.
