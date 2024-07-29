@@ -21,7 +21,7 @@ catcher_height = 100
 pg.init()
 mixer.init()
 
-# Background music for the game
+# Background music and sound for the game
 mixer.music.load('In game music.mp3')  
 mixer.music.set_volume(0.5)
 egg_caught_sound = mixer.Sound('bubble pop.mp3')  
