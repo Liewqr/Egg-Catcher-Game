@@ -22,10 +22,10 @@ pg.init()
 mixer.init()
 
 # Background music for the game
-mixer.music.load('In game music.mp3')  # Update with your file
+mixer.music.load('In game music.mp3')  
 mixer.music.set_volume(0.5)
-egg_caught_sound = mixer.Sound('bubble pop.mp3')  # Sound when an egg is caught
-egg_dropped_sound = mixer.Sound('offical egg crack.mp3')  # Sound when an egg is dropped
+egg_caught_sound = mixer.Sound('bubble pop.mp3')  
+egg_dropped_sound = mixer.Sound('offical egg crack.mp3')  
 
 def show_opening_screen():
     root = tk.Tk()
@@ -52,15 +52,15 @@ def show_opening_screen():
     canvas.create_text(SCREEN_WIDTH / 2, 500, text="Click anywhere to start!", font=instructions_font, fill="Black")
     
     def start_game_action(event=None):
-        mixer.music.stop()  # Stop the opening screen music
+        mixer.music.stop()  
         root.destroy()
         start_game()
     
     canvas.bind("<Button-1>", start_game_action)
     
     # Load and play opening screen music
-    mixer.music.load('opening screen music.mp3')  # Update with your file
-    mixer.music.play(-1)  # Loop the music indefinitely
+    mixer.music.load('opening screen music.mp3') 
+    mixer.music.play(-1) 
     
     root.mainloop()
 
@@ -110,7 +110,7 @@ def start_game():
         eggs.remove(egg)
         c.delete(egg)
         lose_a_life()
-        egg_dropped_sound.play()  # Play sound when an egg is dropped
+        egg_dropped_sound.play() 
         if lives_remaining == 0:
             response = messagebox.askretrycancel("Game Over!", "Final Score: " + str(score) + "\nDo you want to retry?")
             if response:
@@ -141,7 +141,7 @@ def start_game():
         egg_speed = int(egg_speed * difficulty)
         egg_interval = int(egg_interval * difficulty)
         c.itemconfigure(score_text, text="Score: " + str(score))
-        egg_caught_sound.play()  # Play sound when an egg is caught
+        egg_caught_sound.play()  
 
     def move_left(event):
         (x1, y1, x2, y2) = c.coords(catcher)
@@ -163,7 +163,7 @@ def start_game():
     c.focus_set()
 
     # Start background music for the game
-    mixer.music.load('In game music.mp3')  # Ensure correct file path
+    mixer.music.load('In game music.mp3')  
     mixer.music.play(-1)
 
     root.mainloop()
