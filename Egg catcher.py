@@ -22,17 +22,17 @@ pg.init()
 mixer.init()
 
 # Background music for the game
-mixer.music.load('in game music (1).mp3') 
+mixer.music.load('In game music.mp3') 
 mixer.music.set_volume(0.5)
-egg_caught_sound = mixer.Sound('bubble-pop-100784 (1).mp3')  # Sound when an egg is caught
-egg_dropped_sound = mixer.Sound('egg-crack4-85848 (1).mp3')  # Sound when an egg is dropped
+egg_caught_sound = mixer.Sound('bubble-pop-100784.mp3')  # Sound when an egg is caught
+egg_dropped_sound = mixer.Sound('egg-crack4-85848.mp3')  # Sound when an egg is dropped
 
 def show_opening_screen():
     root = tk.Tk()
     root.title('Egg Catcher')
     
     # Display opening screen background image
-    bg_image = tk.PhotoImage(file='egg background (1).png')
+    bg_image = tk.PhotoImage(file='egg background.png')
     
     canvas = tk.Canvas(root, width=SCREEN_WIDTH, height=SCREEN_HEIGHT, background="black")
     canvas.pack()
@@ -59,7 +59,7 @@ def show_opening_screen():
     canvas.bind("<Button-1>", start_game_action)
     
     # Load and play opening screen music
-    mixer.music.load('opening screen music (1).mp3')  
+    mixer.music.load('opening screen music.mp3')  
     mixer.music.play(-1) 
     
     root.mainloop()
@@ -163,7 +163,7 @@ def start_game():
     c.focus_set()
 
     # Start background music for the game
-    mixer.music.load('in game music (1).mp3')  
+    mixer.music.load('In game music.mp3')  
     mixer.music.play(-1)
 
     root.mainloop()
